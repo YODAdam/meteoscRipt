@@ -6,8 +6,14 @@ __debut_saison() :__ permet de determiner le debut de la saison pour une station
 Cette fonction prend 03 arguments:
 - __x__ un vecteur de données. eventuellement un vecteur contenant les données de pluie pour une année et pour une station.
 - __early__ correspond à la date precoce de debut de saison eventuellement le jour ou commence la recherche. Cette valeur est en date julienne (le nombre de jours ecoulés depuis le debut de l'année.
+- __limiteDate__ cette valeur correspond à la date la plus tardive de debut de la saison. si aucun debut de saison n'est detecté avant cette date la fonction retourne __NA__.
 
-__fin_saison() :__  permet de determiner la fin de la saison
+__fin_saison() :__  permet de determiner la fin de la saison.
+Cette fonction accepte 04 arguments:
+- __my_data__ le vecteur de données
+- __fin_precoce__ la date de fin de saison la plus précoce pouvant être donnée en se referant à la climatologie.
+- __limiteFin__ date julienne correspondant à la date de fin la plus tardive possible. la recherche s'arrête après cette date. Par defaut elle correspond à la longueur de l'argument __my_data__.
+- __replaceNA__ valeur de remplacement des valeurs manquantes.
 
 __dry_spell() :__ permet de determiner les sequence sechesses de facon generale sur une partie de l'annee
 
