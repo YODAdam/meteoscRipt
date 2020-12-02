@@ -1,10 +1,11 @@
-# Functions.r
+# Les Functions
 
 Le fichier __Fonction.r__ contient la liste des fonctions parmetant de calculer les caractériques agro-climatiques de la saison des cultures.
 
-__Les fonctions:__
-
 __debut_saison() :__ permet de determiner le debut de la saison pour une station et pour une annee donnees
+Cette fonction prend 03 arguments:
+- __x__ un vecteur de données. eventuellement un vecteur contenant les données de pluie pour une année et pour une station.
+- __early__ correspond à la date precoce de debut de saison eventuellement le jour ou commence la recherche. Cette valeur est en date julienne (le nombre de jours ecoulés depuis le debut de l'année.
 
 __fin_saison() :__  permet de determiner la fin de la saison
 
