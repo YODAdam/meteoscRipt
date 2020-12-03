@@ -16,8 +16,18 @@ Cette fonction accepte 04 arguments:
 - __replaceNA__ valeur de remplacement des valeurs manquantes.
 
 __dry_spell() :__ permet de determiner les sequence sechesses de facon generale sur une partie de l'annee
+Cette fonction prend en entrée un vecteur de valeur et renvoie la sequence sechesse.
+___Remarque__: cette fonction ne renvoie pas uniquement la sequence seches maximale mais toute les sequences seches dans une liste de deux elment dont le premier est la maximale ce qui donne la possibilité de deduire d'autres statistiques autres que la maximale._
 
-__dry_spell_2():__ Version amelioré de dry_spell() avec des options suplementaires
+__dry_spell_2():__ Version amelioré de dry_spell() avec des options suplementaires.
+Cette fonctions prend les arguments suivants:
+- __x__ le vecteur de valeurs.
+- __setNA__ valeur fornie en remplacement des valeurs manquantes. par defaut elle est egale à cette défini globalement __NaIfToReplace__.
+- __start__ debut de recherche de la sequence seches. valeur par defaut est egale à 1.
+- __stop__ égale à la longueur du vecteur par defaut.
+- __IncludeNA__ indique si les valeurs manquantes sont inclusent dans la sortie.
+- __DropNA__ indique si les valeurs manquantes sont suprimés dans le vecteur initial.
+
 
 __maxDrySpell():__ Cette fonction permet de renvoyer la sequence sechesse dans certaines situations malgre les données manquantes
 
