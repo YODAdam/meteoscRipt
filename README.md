@@ -29,9 +29,11 @@ Cette fonctions prend les arguments suivants:
 - __DropNA__ indique si les valeurs manquantes sont suprimés dans le vecteur initial.
 
 
-__maxDrySpell():__ Cette fonction permet de renvoyer la sequence sechesse dans certaines situations malgre les données manquantes
+__maxDrySpell():__ Cette fonction permet de renvoyer la sequence sechesse dans certaines situations malgre les données manquantes.
+Elle evalue en premier lieu l'impact des valeurs manquantes sur la sequence maxiamle et calcul la sequence seches maximale lorsque la repartition des valeurs manquantes seches n'impacte pas la sequence seche.
 
-__stress_spell():__ cette fonction permet de retrouver les sequences de jours de stress hydrique pour un vecteur de pluie donnée
+__stress_spell():__ cette fonction permet de retrouver les sequences de jours de stress hydrique pour un vecteur de pluie donnée.
+Contrairement à la sequence seches cet concepte se base sur la sequence de stress.
 
 __seq_debut () :__ permet de determiner les sequences de debut de saison
 
